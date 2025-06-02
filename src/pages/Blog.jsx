@@ -1,4 +1,4 @@
-import BlogComponent from "./BlogComp";
+import BlogComponent from "../components/BlogComp";
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";

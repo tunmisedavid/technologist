@@ -1,4 +1,4 @@
-import FeaturedCards from "./FeaturedCards";
+import FeaturedCards from "../components/FeaturedCards";
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";

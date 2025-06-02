@@ -1,5 +1,5 @@
-import FeaturedCards from "./FeaturedCards";
-import RecentCard from "./RecentCardComponent";
+import FeaturedCards from "../components/FeaturedCards";
+import RecentCard from "../components/RecentCardComponent";
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -8,7 +8,7 @@ const Landing = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const ref2 = useRef(null)
+  const ref2 = useRef(null);
   const isInView2 = useInView(ref2, { once: true });
 
   const ref3 = useRef(null);
