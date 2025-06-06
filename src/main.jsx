@@ -11,27 +11,27 @@ import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/technologist/",
+    // path: "/technologist/",
     element: <App />,
     children: [
       {
-        path: "/technologist/",
+        path: "/",
         element: <Landing />,
       },
       {
-        path: "/technologist/Blog",
+        path: "/Blog",
         element: <Blog />,
       },
       {
-        path: "/technologist/Works",
+        path: "/Works",
         element: <Works />,
       },
       {
-        path: "/technologist/Skills",
+        path: "/Skills",
         element: <Skills />,
       },
       {
-        path: "/technologist/Contact",
+        path: "/Contact",
         element: <Contact />,
       },
     ],

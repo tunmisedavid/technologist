@@ -1,6 +1,5 @@
 {
   "name": "technologist",
-  "homepage": "https://tunmisedavid.github.io/technologist/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -32,4 +31,3 @@
     "vite": "^6.3.5"
   }
 }
- 
