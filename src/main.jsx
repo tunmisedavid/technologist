@@ -11,7 +11,6 @@ import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    // path: "/technologist/",
     element: <App />,
     children: [
       {
