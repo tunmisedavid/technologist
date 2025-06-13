@@ -1,7 +1,10 @@
 import FeaturedCards from "../components/FeaturedCards";
 import RecentCard from "../components/RecentCardComponent";
 
-import profilePic from "../assets/profile.png"
+import profilePic from "../assets/profile.png";
+import designPic from "../assets/image-1.png";
+import vibrntPic from "../assets/image-2.png";
+import tipographyPic from "../assets/image-3.png";
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -101,7 +104,7 @@ const Landing = () => {
         </p>
         <div className="flex flex-col gap-8">
           <FeaturedCards
-            featureImg="src/assets/image-1.png"
+            featureImg={designPic}
             featureImgAlt="dashboard picture"
             featureHead="Designing Dashboards"
             featureYr="2020"
@@ -109,7 +112,7 @@ const Landing = () => {
             featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <FeaturedCards
-            featureImg="src/assets/image-2.png"
+            featureImg={vibrntPic}
             featureImgAlt="Illustration picture"
             featureHead="Vibrant Portraits of 2018"
             featureYr="2018"
@@ -117,7 +120,7 @@ const Landing = () => {
             featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
           />
           <FeaturedCards
-            featureImg="src/assets/image-3.png"
+            featureImg={tipographyPic}
             featureImgAlt="Typography picture"
             featureHead="36 Days of Malayalam type"
             featureYr="2018"

@@ -1,27 +1,32 @@
 import SocialIcons from "./SocialIcons";
 
-const Socials = ( ) => {
+import facebookIcon from "../assets/fb.png";
+import instagramIcon from "../assets/insta.png";
+import twitterIcon from "../assets/twitter.png";
+import linkedInIcon from "../assets/Linkedin.png";
+
+const Socials = () => {
   return (
     <div className="mt-24 ">
       <div className="flex justify-center items-center gap-6">
         <SocialIcons
           socialLink="#"
-          socialSrc="src/assets/fb.png"
+          socialSrc={facebookIcon}
           socialApp="facebook"
         />
         <SocialIcons
           socialLink="#"
-          socialSrc="src/assets/insta.png"
+          socialSrc={instagramIcon}
           socialApp="Instagram"
         />
         <SocialIcons
           socialLink="#"
-          socialSrc="src/assets/twitter.png"
+          socialSrc={twitterIcon}
           socialApp="Twitter"
         />
         <SocialIcons
           socialLink="#"
-          socialSrc="src/assets/Linkedin.png"
+          socialSrc={linkedInIcon}
           socialApp="Linkedin"
         />
       </div>
@@ -32,6 +37,6 @@ const Socials = ( ) => {
       </div>
     </div>
   );
-}
+};
 
 export default Socials;

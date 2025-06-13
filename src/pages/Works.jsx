@@ -3,6 +3,11 @@ import FeaturedCards from "../components/FeaturedCards";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
+import designPic from "../assets/image-1.png";
+import vibrntPic from "../assets/image-2.png";
+import tipographyPic from "../assets/image-3.png";
+import componentsPic from "../assets/components.png";
+
 const Works = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -18,7 +23,7 @@ const Works = () => {
       </p>
       <div className="flex flex-col gap-8">
         <FeaturedCards
-          featureImg="src/assets/image-1.png"
+          featureImg={designPic}
           featureImgAlt="dashboard picture"
           featureHead="Designing Dashboards"
           featureYr="2020"
@@ -26,7 +31,7 @@ const Works = () => {
           featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
         />
         <FeaturedCards
-          featureImg="src/assets/image-2.png"
+          featureImg={vibrntPic}
           featureImgAlt="Illustration picture"
           featureHead="Vibrant Portraits of 2018"
           featureYr="2018"
@@ -34,7 +39,7 @@ const Works = () => {
           featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
         />
         <FeaturedCards
-          featureImg="src/assets/image-3.png"
+          featureImg={tipographyPic}
           featureImgAlt="Typography picture"
           featureHead="36 Days of Malayalam type"
           featureYr="2018"
@@ -42,7 +47,7 @@ const Works = () => {
           featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
         />
         <FeaturedCards
-          featureImg="src/assets/components.png"
+          featureImg={componentsPic}
           featureImgAlt="Compnents picture"
           featureHead="Components"
           featureYr="2018"
