@@ -1,6 +1,8 @@
 import FeaturedCards from "../components/FeaturedCards";
 import RecentCard from "../components/RecentCardComponent";
 
+import profilePic from "../assets/profile.png"
+
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
@@ -25,7 +27,7 @@ const Landing = () => {
         <div>
           <img
             className="w-40 md:w-52"
-            src="src/assets/profile.png"
+            src={profilePic}
             alt="profile picture"
           />
         </div>
