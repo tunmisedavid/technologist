@@ -10,7 +10,7 @@ const BlogComponent = ({ blogHead, blogyr, blogType, blogInfo }) => {
         <span className="border-[1px] h-3 ml-2 mr-2"></span>
         <span className="text-[#8695A4] md:text-xl">{blogType}</span>
       </p>
-      <p className="font-normal w-72 sm:w-[500px] md:w-[530px] lg:w-[610px]  text-sm lg:text-base">{blogInfo}</p>
+      <p className="font-normal w-[305px] sm:w-[590px] md:w-[650px] lg:w-[610px] lg:text-base">{blogInfo}</p>
     </div>
   );
 };

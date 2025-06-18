@@ -25,20 +25,20 @@ const Landing = () => {
         ref={ref}
         className={`${
           isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-y-20"
-        } transition duration-[1.5s] mt-6 md:mt-20 xl:mt-24 pb-14 md:pb-16 max-w-7xl w-10/12 lg:w-9/12 m-auto flex flex-col md:flex-row-reverse items-center md:items-start md:justify-between gap-8 md:gap-0`}
+        } transition duration-[1.5s] mt-6 md:mt-20 xl:mt-24 pb-14 md:pb-16 max-w-4xl w-10/12 m-auto flex flex-col md:flex-row-reverse items-center md:items-start md:justify-between gap-8 md:gap-0`}
       >
         <div>
           <img
-            className="w-40 md:w-52"
+            className="w-44 lg:w-52"
             src={profilePic}
             alt="profile picture"
           />
         </div>
-        <div className="font-primary  flex flex-col gap-3 md:gap-4 lg:gap-5">
-          <p className="font-bold text-primaryBrand text-3xl lg:text-4xl text-center md:leading-10 w-48 md:w-[300px] lg:w-[350px] m-auto md:ml-0 md:text-start">
+        <div className="font-primary  flex flex-col gap-3 md:gap-4 lg:gap-6 ">
+          <p className="font-bold text-primaryBrand text-3xl lg:text-[44px] text-center md:leading-10 lg:leading-14 w-48 md:w-[300px] lg:w-[440px] m-auto md:ml-0 md:text-start">
             Hi, I am John, Creative Technologist
           </p>
-          <p className="font-normal text-primaryBrand text-sm lg:text-base text-center md:text-start w-64 md:w-96 lg:w-[460px] m-auto md:ml-0 ">
+          <p className="font-normal text-primaryBrand text-sm lg:text-base text-center md:text-start w-72 md:w-[420px] lg:w-[500px] m-auto md:ml-0 ">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
@@ -63,7 +63,7 @@ const Landing = () => {
           ref={ref2}
           className={`  ${
             isInView2 ? "opacity-100 translate-x-0" : "opacity-0 translate-y-20"
-          } transition duration-[1.5s] font-primary py-6 md:py-10 max-w-7xl w-10/12 lg:w-9/12 m-auto`}
+          } transition duration-[1.5s] font-primary py-6 md:py-10 max-w-4xl w-10/12 m-auto`}
         >
           <div className="flex pb-3 md:pb-5 justify-center md:justify-between">
             <p className="text-primaryBrand font-normal text-lg md:text-xl">
@@ -73,7 +73,7 @@ const Landing = () => {
               View all
             </p>
           </div>
-          <div className="flex flex-col gap-4 lg:gap-0 md:flex-row md:justify-between">
+          <div className="flex flex-col gap-3 md:gap-6 items-center md:flex-row md:justify-between">
             <RecentCard
               info="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -97,39 +97,44 @@ const Landing = () => {
         ref={ref3}
         className={`${
           isInView3 ? "opacity-100 translate-x-0" : "opacity-0 translate-y-20"
-        } transition duration-[1.5s] max-w-7xl w-10/12 lg:w-9/12 m-auto pt-6 md:pt-10 pb-4 md:pb-8`}
+        } transition duration-[1.5s] max-w-4xl w-10/12 m-auto pt-6 md:pt-10 pb-4 md:pb-8`}
       >
         <p className="font-primary font-normal pb-4 md:pb-6 lg:pb-8 text-lg md:text-xl text-primaryBrand text-center md:text-start">
           Feaured works
         </p>
-        <div className="flex flex-col gap-8">
-          <FeaturedCards
-            featureImg={designPic}
-            featureImgAlt="dashboard picture"
-            featureHead="Designing Dashboards"
-            featureYr="2020"
-            featureType="Dashboards"
-            featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
-          <FeaturedCards
-            featureImg={vibrntPic}
-            featureImgAlt="Illustration picture"
-            featureHead="Vibrant Portraits of 2018"
-            featureYr="2018"
-            featureType="Illustration"
-            featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
-          <FeaturedCards
-            featureImg={tipographyPic}
-            featureImgAlt="Typography picture"
-            featureHead="36 Days of Malayalam type"
-            featureYr="2018"
-            featureType="Typography"
-            featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-          />
+        <div className="flex flex-col items-center md:items-start gap-8">
+          <div>
+            <FeaturedCards
+              featureImg={designPic}
+              featureImgAlt="dashboard picture"
+              featureHead="Designing Dashboards"
+              featureYr="2020"
+              featureType="Dashboards"
+              featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+          </div>
+          <div className="hidden md:block">
+            <FeaturedCards
+              featureImg={vibrntPic}
+              featureImgAlt="Illustration picture"
+              featureHead="Vibrant Portraits of 2018"
+              featureYr="2018"
+              featureType="Illustration"
+              featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+          </div>
+          <div className="hidden md:block">
+            <FeaturedCards
+              featureImg={tipographyPic}
+              featureImgAlt="Typography picture"
+              featureHead="36 Days of Malayalam type"
+              featureYr="2018"
+              featureType="Typography"
+              featureInfo="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+          </div>
         </div>
       </motion.div>
-      {/* <div className="border border-t border-[#E0E0E0] max-w-7xl w-10/12 lg:w-9/12 m-auto"></div> */}
     </div>
   );
 };

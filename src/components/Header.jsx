@@ -10,7 +10,7 @@ const HeaderComponent = () => {
     setOpenNav(!openNav);
   };
   return (
-    <div className="font-primary max-w-7xl w-11/12 m-auto h-20 flex items-center justify-end">
+    <div className="font-primary max-w-5xl w-11/12 m-auto h-20 flex items-center justify-end">
       <div className={`hidden md:flex `}>
         <NavLinks
           links={[
@@ -27,9 +27,9 @@ const HeaderComponent = () => {
         className="cursor-pointer border border-primaryBrand rounded z-20 fixed  right-3  md:hidden"
       >
         {!openNav ? (
-          <IoMenuOutline className="text-primaryBrand text-3xl" />
+          <IoMenuOutline className="text-primaryBrand text-2xl md:text-3xl" />
         ) : (
-          <MdOutlineClose className="text-primaryBrand text-3xl" />
+          <MdOutlineClose className="text-primaryBrand text-2xl md:text-3xl"/>
         )}
       </div>
       <div

@@ -18,10 +18,10 @@ const Works = () => {
         isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-y-20"
       } transition duration-[1.5s] mt-2  md:mt-20 xl:mt-24  max-w-7xl w-10/12 lg:w-9/12 m-auto font-primary`}
     >
-      <p className="font-bold text-primaryBrand mb-4 md:mb-6 text-3xl md:text-4xl">
+      <p className="font-bold text-primaryBrand text-center md:text-start mb-4 md:mb-6 text-3xl md:text-4xl">
         Work
       </p>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col items-center md:items-start gap-8">
         <FeaturedCards
           featureImg={designPic}
           featureImgAlt="dashboard picture"

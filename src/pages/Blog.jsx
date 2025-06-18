@@ -12,12 +12,12 @@ const Blog = () => {
       ref={ref}
       className={`${
         isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-y-20"
-      } transition duration-[1.5s] mt-2  md:mt-20 xl:mt-24  max-w-7xl w-10/12 lg:w-9/12 m-auto font-primary`}
+      } transition duration-[1.5s] mt-2  md:mt-20 xl:mt-24  max-w-5xl w-10/12 lg:w-9/12 m-auto font-primary`}
     >
       <p className="font-bold text-primaryBrand mb-4 md:mb-6 text-3xl md:text-4xl">
         Blog
       </p>
-      <div>
+      <div className="">
         <BlogComponent
           blogHead="UI Intractions of the week"
           blogyr="12 Feb 2019"
